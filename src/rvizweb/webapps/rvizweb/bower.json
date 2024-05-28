@@ -1,0 +1,23 @@
+{
+  "name": "rvizweb",
+  "authors": [
+    "Louise Poubel <louise@openrobotics.org>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "Apache 2",
+  "homepage": "https://github.com/osrf/polymer-ros-rviz",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "threejs": "https://raw.githubusercontent.com/mrdoob/three.js/r89/build/three.min.js",
+    "eventemitter2": "^6.4.0",
+    "ros-rviz": "https://github.com/yxzhan/polymer-ros-rviz.git",
+    "ros3djs": "https://raw.githubusercontent.com/yxzhan/ros3djs/master/build/ros3d.min.js"
+  }
+}

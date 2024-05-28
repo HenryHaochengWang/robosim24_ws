@@ -1,0 +1,27 @@
+{
+  "name": "rvizweb",
+  "version": "0.0.0",
+  "description": "RVizWeb: RViz on the browser",
+  "scripts": {
+    "build": "bower install --allow-root && polymer build --name www",
+    "dev": "cd ./build/www/bower_components && rm -rf ros-rviz && ln -s ../../../../../../polymer-ros-rviz ./ros-rviz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osrf/rvizweb.git"
+  },
+  "keywords": [
+    "ros",
+    "rviz"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/osrf/rvizweb/issues"
+  },
+  "homepage": "https://github.com/osrf/rvizweb#readme",
+  "devDependencies": {
+    "bower": "^1.8.14",
+    "polymer-cli": "^1.9.11"
+  }
+}
