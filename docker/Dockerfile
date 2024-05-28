@@ -8,9 +8,8 @@ RUN curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo ap
 
 # Clone Rvizweb source code
 # I changed git repo to my own, which reference from yxzhan's rvizweb fork
-ARG RVIZWEB_REPO=https://github.com/HenryHaochengWang/robosim24_ws.git
-ARG RVIZWEB_BRANCH=main
-RUN git clone ${RVIZWEB_REPO} rvizweb -b ${RVIZWEB_BRANCH}
+RUN git clone https://github.com/HenryHaochengWang/robosim24_ws.git 
+WORKDIR /robosim24_ws
 
 # --- Optional, for demostration---
 # Clone interactive_marker_proxy
