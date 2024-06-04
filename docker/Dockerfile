@@ -27,9 +27,9 @@ RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && catkin_make"
 # Clear apt cache.
 RUN apt clean
 
-RUN echo "source /rvizweb_ws/devel/setup.bash" >> /root/.bashrc
+RUN echo "source /robosim24_ws/devel/setup.bash" >> /root/.bashrc
 
 ENTRYPOINT ["/bin/bash", "-c", \
-  "source /rvizweb_ws/devel/setup.bash && \
+  "source /robosim24_ws/devel/setup.bash && \
   roslaunch rvizweb rvizweb.launch \
 "]
